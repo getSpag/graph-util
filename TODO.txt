@@ -1,0 +1,124 @@
+---------------
+DEC 2025
+--------
+
+path from i to j
+    DFS / BFS check box
+
+    step animation and frontier inclusion
+    pop front / back clips
+
+
+
+-----------------
+JAN 2023 BELOW
+------
+
+/*
+
+shorten edge thing
+
+technically, you are armed to:
+- calculate a position for the edge weight box such that it will display nicely
+- use that position for the edge weight edit click
+---- ^ doable -----
+---- below u need to think about ----- ***
+- and use the midpoint to recalculate the control points so teh bezier is drawn through mouse position
+- this will give u ability to drag edges to the dumpsta
+THEN the ui is DONE. 
+clean up, make pretty and safe, and then do some other stuff
+
+--- *** ---j
+
+Blackbox, input output outline of modification:
+'''''''''''''''''''''''''''
+Edge would need to know about whether or not it's being dragged so it knows 
+if it has to calculate cp or just set it to the mouse position
+just include
+...
+    for edge in edges
+        if edge != draggingEdge
+            edge.update(ctx, null)
+    ...
+    elif draggingEdge
+        draggingEdge.update(ctx, mousePos)
+
+just use it as an update argument 
+
+>> specifying how pm=mousePos will give desired thinking
+>> figure this part out
+
+just do whatever u gotta do for a smooth transition
+fuck modifying teh curve as if you're dragging a node yo
+just tie the mouse drag to all 3 points: pu, pv & cp
+that way ur dragging the whole curve, function is preserved, it looks nice
+aight this should work
+
+----
+donut later?
+
+
+
+
+
+
+
+
+rotato matrix cool
+try talking more in terms of rotations and translations
+click and hold stuff to drag control points would be cool
+could also convert to touch stuff then
+more trouble than worth most likely
+
+also time to start thinking about edges and nodes
+may want to maintain another ds as well
+rerun functions to populate box on addedge and addnode
+
+make editing edge weights safe
+
+figure out how to delete edges (with negative and zero edge weights allowed)
+
+fix backedges drawing to the same side blah blah blah
+> then basics of ui pretty much done
+
+from there:
+> canvas sizing, element sizing
+> make pretty (add draw options to classes for animation stuff l8er)
+> maybe clean up the math more, make more efficient, different/additional DS 
+  to keep track of stuff
+> finalize surrounding UI elements (testcase, property box, animation space or nah...)
+> make necessary modifications to fit new stuff
+
+write functions to test for properties for popup card
+
+who knows what'll really happen tho 
+
+relatively good place to leave it for a couple of days while 
+ur doing ur comm lab
+
+----
+
+could have a super class for drawing properties
+or just make update functions take arguments
+class in 1.5 hours lol
+
+
+*/
+
+
+
+/* 
+maybe: animate stuff
+add properties to node & edge class to temporarily change
+styling (width, colour, etc) to help with animatino stuff
+- could make sure elements never overlap (closeTo modification), but save for l8er 
+
+(maybe then investigate mobile UI options if u care enough.)
+
+*/
+
+
+/*
+    figure out js events what's going on under the hood which are handled first etc
+    so u can get rid of some tabs.
+*/
