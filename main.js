@@ -4,20 +4,21 @@ import Edge from './Edge.js';
 var area = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = window.innerWidth * 0.6
+        this.canvas.width = window.innerWidth * 0.3
         this.canvas.height = this.canvas.width
         this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);// check why this is 20
         this.interval = setInterval(updateGameArea, 5);
     },
     clear : function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        this.context.drawRect
     }
 }
   
 
-var r = 30; // nodde
-var re = 20; // has to be high because mouse click has an offset (to the right tip, not tip)
+var r = 30; // nodde radius
+var re = 20; // edge radius, has to be high because mouse click has an offset (to the right tip, not tip)
 var nodes = [new Node(30, 31, 31, 'Add'), new Node(30, 31, 121, 'Del')];
 var edges = [];
 var directed = false;
