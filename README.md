@@ -18,4 +18,4 @@
 ---
 **CHANGELOG**
 * March 2025
-> Updated to include brief README, TODO and added instructions
+**Updated to include brief README, TODO and added instructions
