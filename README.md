@@ -1,4 +1,5 @@
-**cool tool for edge-weighted directed graphs**
+# Graph-util
+### cool tool for edge-weighted directed graphs
 
 **run in your browser, instructions on the page:**
 * All clicks are sticky. 
@@ -18,4 +19,4 @@
 ---
 **CHANGELOG**
 * March 2025
-**Updated to include brief README, TODO and added instructions
+    * Updated to include brief README, TODO and added instructions
