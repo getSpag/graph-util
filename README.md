@@ -1,6 +1,10 @@
 # Graph-util
 ### cool tool for edge-weighted directed graphs
 
+
+![node](https://github.com/user-attachments/assets/abc42d48-6b11-42da-8fa2-103ee45e1ba0)
+
+
 **run in your browser, instructions on the page:**
 * All clicks are sticky. 
 * Left click any element to drag (drag edges by the dot). 
