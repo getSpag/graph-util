@@ -2,7 +2,8 @@
 ### cool tool for edge-weighted directed graphs
 
 
-![node2](https://github.com/user-attachments/assets/f7cc8218-c25e-4d50-a8d2-d33c0751a1bc)
+
+![node4](https://github.com/user-attachments/assets/5bdbf29c-9513-4ab7-9775-7e998e56a32c)
 
 
 
