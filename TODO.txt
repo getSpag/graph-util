@@ -51,7 +51,6 @@ just use it as an update argument
 >> figure this part out
 
 just do whatever u gotta do for a smooth transition
-fuck modifying teh curve as if you're dragging a node yo
 just tie the mouse drag to all 3 points: pu, pv & cp
 that way ur dragging the whole curve, function is preserved, it looks nice
 aight this should work
